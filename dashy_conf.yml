@@ -1,0 +1,133 @@
+appConfig:
+  theme: high-contrast-light
+  layout: auto
+  iconSize: small
+  language: en
+  startingView: default
+  defaultOpeningMethod: newtab
+  statusCheck: false
+  statusCheckInterval: 60
+  faviconApi: allesedv
+  routingMode: history
+  enableMultiTasking: false
+  widgetsAlwaysUseProxy: false
+  webSearch:
+    disableWebSearch: false
+    searchEngine: duckduckgo
+    openingMethod: newtab
+    searchBangs: {}
+  enableFontAwesome: true
+  enableMaterialDesignIcons: false
+  hideComponents:
+    hideHeading: false
+    hideNav: false
+    hideSearch: false
+    hideSettings: false
+    hideFooter: false
+  auth:
+    enableGuestAccess: false
+    users: []
+    enableKeycloak: false
+  showSplashScreen: false
+  preventWriteToDisk: false
+  preventLocalSave: false
+  disableConfiguration: false
+  disableConfigurationForNonAdmin: false
+  allowConfigEdit: true
+  enableServiceWorker: false
+  disableContextMenu: false
+  disableUpdateChecks: false
+  disableSmartSort: false
+  enableErrorReporting: false
+pageInfo:
+  title: Mahdy Dashboard
+  description: ''
+  footerText: ''
+sections:
+  - name: Monitoring & Control
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Portainer
+        icon: >-
+          https://static-00.iconduck.com/assets.00/portainer-icon-366x512-rt9if7pd.png
+        url: http://mahdy-th80:9111/#!/2/docker/containers
+        target: modal
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:9111
+        id: 0_1901_portainer
+  - name: Multimedia
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Photoprism
+        icon: https://dl.photoprism.app/icons/bold.svg
+        url: http://mahdy.th80:2342
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:2342/library/login
+        id: 0_1035_photoprism
+      - title: Jellyfin
+        icon: >-
+          https://techspot.com/images2/downloads/topdownload/2021/03/2021-03-22-ts3_thumbs-a00.png
+        url: http://mahdy.th80:8182/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:8182/
+        id: 1_1035_jellyfin
+      - title: Nextcloud
+        icon: >-
+          https://cdn.icon-icons.com/icons2/2699/PNG/512/nextcloud_logo_icon_168948.png
+        url: http://mahdy.th80:8180
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:8180
+        id: 2_1035_nextcloud
+      - title: Wiki JS
+        icon: >-
+          https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/wikijs-full-2021-768t-svg-yOi8.png
+        url: http://mahdy.th80:3110
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:3110
+        id: 3_1035_wikijs
+  - name: Dev
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Keycloak
+        icon: >-
+          https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/Keycloak-VC4L-19JH.png
+        url: http://mahdy.th80:7000
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:7000
+        id: 0_287_keycloak
+      - title: Consul
+        icon: https://www.svgrepo.com/show/448216/consul.svg
+        url: http://mahdy.th80:8590
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:8590
+        id: 1_287_consul
+      - title: Kafka
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Apache_kafka-icon.svg/1200px-Apache_kafka-icon.svg.png
+        url: http://mahdy.th80:7005
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: >-
+          http://mahdy.th80:7005/api/docker-kafka-server/topic?search=&show=HIDE_INTERNAL&page=1
+        id: 2_287_kafka
