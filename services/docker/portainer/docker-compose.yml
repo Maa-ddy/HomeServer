@@ -1,0 +1,17 @@
+# docker-compose.yml 
+version: '3'
+
+services:
+  portainer:
+    image: portainer/portainer-ce:2.9.3
+    container_name: portainer_maaddy
+    restart: unless-stopped
+    security_opt:
+      - no-new-privileges:true
+    volumes:
+      - /etc/localtime:/etc/localtime:ro
+      - /var/run/docker.sock:/var/run/docker.sock:ro
+      - ./portainer-data:/data
+    ports:
+      - 9111:9000
+        #- 9443:9443
