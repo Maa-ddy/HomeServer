@@ -60,6 +60,12 @@ sections:
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:9111
         id: 0_1901_portainer
+      - title: Twingate
+        icon: >-
+          https://global.discourse-cdn.com/standard17/uploads/twingate/original/1X/fb40be85d95830140c4cb51f7666dd4f50585d39.png
+        url: https://hardshoft.twingate.com/
+        target: newtab
+        id: 1_1901_twingate
   - name: Multimedia
     displayData:
       sortBy: default
@@ -140,12 +146,15 @@ sections:
       hideForGuests: false
     items:
       - title: Webtop PTL
+        icon: https://cdn-icons-png.flaticon.com/512/10321/10321987.png
         url: http://mahdy.th80:8200/
         target: newtab
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:8200/
         id: 0_981_webtopptl
       - title: Code server
+        icon: >-
+          https://user-images.githubusercontent.com/5768801/99205104-8d519600-2785-11eb-9171-e2952f22d2ab.png
         url: https://mahdy.th80:7002
         target: newtab
         statusCheck: true
@@ -154,3 +163,18 @@ sections:
         statusCheckAcceptCodes: '302'
         statusCheckMaxRedirects: '2'
         id: 1_981_codeserver
+      - title: Firefox PTL
+        icon: firefox_ptl.png
+        url: http://mahdy.th80:5801
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:5801
+        id: 2_981_firefoxptl
+      - title: Firefox playground
+        icon: >-
+          https://static-00.iconduck.com/assets.00/firefox-icon-1981x2048-4izjijq3.png
+        url: http://mahdy.th80:5800
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:5800
+        id: 3_981_firefoxplayground
