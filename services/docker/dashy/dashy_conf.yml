@@ -55,7 +55,7 @@ sections:
       - title: Portainer
         icon: >-
           https://static-00.iconduck.com/assets.00/portainer-icon-366x512-rt9if7pd.png
-        url: http://mahdy.th80:9111/#!/2/docker/containers
+        url: http://mahdy-th80:9111/#!/2/docker/containers
         target: modal
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:9111
@@ -99,13 +99,6 @@ sections:
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:3110
         id: 3_1035_wikijs
-      - title: Resilio sync
-        url: http://mahdy.th80:8100
-        target: newtab
-        statusCheck: true
-        statusCheckUrl: http://mahdy.th80:8100
-        statusCheckAcceptCodes: '401'
-        id: 4_1035_resiliosync
   - name: Dev
     displayData:
       sortBy: default
@@ -138,3 +131,26 @@ sections:
         statusCheckUrl: >-
           http://mahdy.th80:7005/api/docker-kafka-server/topic?search=&show=HIDE_INTERNAL&page=1
         id: 2_287_kafka
+  - name: Remote env
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Webtop PTL
+        url: http://mahdy.th80:8200/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:8200/
+        id: 0_981_webtopptl
+      - title: Code server
+        url: https://mahdy.th80:7002
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:7002
+        statusCheckAllowInsecure: true
+        statusCheckAcceptCodes: '302'
+        statusCheckMaxRedirects: '2'
+        id: 1_981_codeserver
