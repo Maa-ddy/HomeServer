@@ -105,6 +105,14 @@ sections:
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:3110
         id: 3_1035_wikijs
+      - title: Resilio Sync
+        icon: https://avatars.githubusercontent.com/u/12284211?s=280&v=4
+        url: http://mahdy.th80:8100
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:8100
+        statusCheckAcceptCodes: '401'
+        id: 4_1035_resiliosync
   - name: Dev
     displayData:
       sortBy: default
