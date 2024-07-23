@@ -2,20 +2,54 @@ version: "3.8"
 services:
   dashy:
     container_name: Dashy
+
     image: lissy93/dashy
+
     volumes:
       - ./dashy_conf.yml:/app/public/conf.yml
-      #- /path/to/item-icons:/app/public/item-icons
+      - ./icons:/app/public/item-icons
+
     ports:
       - 3111:80
+
     environment:
       - NODE_ENV=production
+
     restart: unless-stopped
+
     healthcheck:
       test: ['CMD', 'node', '/app/services/healthcheck']
       interval: 1m30s
       timeout: 10s
       retries: 3
       start_period: 40s
+
     extra_hosts:
-      - mahdy.th80:host-gateway  # for status check of services running on the same machine
+      - mahdy.th80:host-gateway
+
+  dashy-ptl:
+    container_name: Dashy-PTL
+
+    image: lissy93/dashy
+
+    volumes:
+      - ./dashy_conf-ptl.yml:/app/public/conf.yml
+      - ./icons:/app/public/item-icons
+
+    ports:
+      - 3112:80
+
+    environment:
+      - NODE_ENV=production
+
+    restart: unless-stopped
+
+    healthcheck:
+      test: ['CMD', 'node', '/app/services/healthcheck']
+      interval: 1m30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+    extra_hosts:
+      - mahdy.th80:host-gateway

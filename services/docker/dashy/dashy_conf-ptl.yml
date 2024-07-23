@@ -40,8 +40,9 @@ appConfig:
   disableSmartSort: false
   enableErrorReporting: false
 pageInfo:
-  title: Mahdy Dashboard
+  title: PTL Dashboard
   description: ''
+  navLinks: []
   footerText: ''
 sections:
   - name: Monitoring & Control
@@ -66,60 +67,22 @@ sections:
         url: https://hardshoft.twingate.com/
         target: newtab
         id: 1_1901_twingate
-      - title: PTL Dashy
-        icon: https://dashy.to/img/dashy.png
-        url: http://mahdy.th80:3112
-        target: newtab
-        statusCheck: true
-        statusCheckUrl: http://mahdy.th80:3112
-        id: 2_1901_ptldashy
-  - name: Multimedia
-    displayData:
-      sortBy: default
-      rows: 1
-      cols: 1
-      collapsed: false
-      hideForGuests: false
-    items:
-      - title: Photoprism
-        icon: https://dl.photoprism.app/icons/bold.svg
-        url: http://mahdy.th80:2342
-        target: newtab
-        statusCheck: true
-        statusCheckUrl: http://mahdy.th80:2342/library/login
-        id: 0_1035_photoprism
-      - title: Jellyfin
+      - title: VPN
+        description: >-
+          We try to reach device swagger in prod. it is possible that vpn is up
+          but this fails
         icon: >-
-          https://techspot.com/images2/downloads/topdownload/2021/03/2021-03-22-ts3_thumbs-a00.png
-        url: http://mahdy.th80:8182/
-        target: newtab
+          https://play-lh.googleusercontent.com/MDDH7WLlwds0bkr-fLZKQ751gWGxbpuAtJGk5TRLFkHYr2rWM_hKHWHPhzVfgQ35YlhM
+        url: ''
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:8182/
-        id: 1_1035_jellyfin
-      - title: Nextcloud
+        statusCheckUrl: https://device.teamusages.prod.protectline.fr/swagger-ui.html
+        id: 2_1901_vpn
+      - title: AWS apps
         icon: >-
-          https://cdn.icon-icons.com/icons2/2699/PNG/512/nextcloud_logo_icon_168948.png
-        url: http://mahdy.th80:8180
+          https://files.softicons.com/download/social-media-icons/free-social-media-icons-by-uiconstock/png/512x512/AWS-Icon.png
+        url: https://protectline.awsapps.com/start/
         target: newtab
-        statusCheck: true
-        statusCheckUrl: http://mahdy.th80:8180
-        id: 2_1035_nextcloud
-      - title: Wiki JS
-        icon: >-
-          https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/wikijs-full-2021-768t-svg-yOi8.png
-        url: http://mahdy.th80:3110
-        target: newtab
-        statusCheck: true
-        statusCheckUrl: http://mahdy.th80:3110
-        id: 3_1035_wikijs
-      - title: Resilio Sync
-        icon: https://avatars.githubusercontent.com/u/12284211?s=280&v=4
-        url: http://mahdy.th80:8100
-        target: newtab
-        statusCheck: true
-        statusCheckUrl: http://mahdy.th80:8100
-        statusCheckAcceptCodes: '401'
-        id: 4_1035_resiliosync
+        id: 3_1901_awsapps
   - name: Dev
     displayData:
       sortBy: default
@@ -193,3 +156,81 @@ sections:
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:5800
         id: 3_981_firefoxplayground
+  - name: Swaggers - dev
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Device
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://device.dev.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://device.dev.protectline.fr/swagger-ui.html
+        id: 0_1263_device
+      - title: Install
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: >-
+          https://installation.dev.protectline.fr/swagger-ui.html#/device-controller
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: >-
+          https://installation.dev.protectline.fr/swagger-ui.html#/device-controller
+        id: 1_1263_install
+      - title: Event
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://event.dev.protectline.fr/swagger-ui.html#/device-controller
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://event.dev.protectline.fr/swagger-ui.html#/device-controller
+        id: 2_1263_event
+      - title: DeviceManagement
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: >-
+          https://devicemanagement.dev.protectline.fr/swagger-ui.html#/device-controller
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: >-
+          https://devicemanagement.dev.protectline.fr/swagger-ui.html#/device-controller
+        color: '#5d34e3'
+        id: 3_1263_devicemanagement
+      - title: DM Orchestrator
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: >-
+          https://devicemanagement-orchestrator.dev.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: >-
+          https://devicemanagement-orchestrator.dev.protectline.fr/swagger-ui.html
+        color: '#5d34e3'
+        id: 4_1263_dmorchestrator
+  - name: Services - dev
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: DM FE
+        icon: https://cdn-icons-png.flaticon.com/512/780/780457.png
+        url: https://devicemanagement-fe.dev.protectline.fr/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://devicemanagement-fe.dev.protectline.fr/
+        id: 0_1264_dmfe
+      - title: Keycloak
+        icon: https://upload.wikimedia.org/wikipedia/commons/2/29/Keycloak_Logo.png
+        url: https://keycloak-21.dev.protectline.fr/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://keycloak-21.dev.protectline.fr/
+        id: 1_1264_keycloak
