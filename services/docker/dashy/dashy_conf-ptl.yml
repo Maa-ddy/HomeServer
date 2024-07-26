@@ -83,7 +83,14 @@ sections:
         url: https://protectline.awsapps.com/start/
         target: newtab
         id: 3_1901_awsapps
-  - name: Dev
+      - title: Cloudwatch Alarms
+        icon: >-
+          https://cloud-icons.onemodel.app/aws/Architecture-Service-Icons_01312023/Arch_Management-Governance/64/Arch_Amazon-CloudWatch_64@5x.png
+        url: >-
+          https://eu-west-3.console.aws.amazon.com/cloudwatch/home?region=eu-west-3#alarmsV2:?~(alarmStateFilter~'ALARM)
+        target: newtab
+        id: 4_1901_cloudwatchalarms
+  - name: Local dev services
     displayData:
       sortBy: default
       rows: 1
@@ -98,14 +105,14 @@ sections:
         target: newtab
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:7000
-        id: 0_287_keycloak
+        id: 0_1742_keycloak
       - title: Consul
         icon: https://www.svgrepo.com/show/448216/consul.svg
         url: http://mahdy.th80:8590
         target: newtab
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:8590
-        id: 1_287_consul
+        id: 1_1742_consul
       - title: Kafka
         icon: >-
           https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Apache_kafka-icon.svg/1200px-Apache_kafka-icon.svg.png
@@ -114,7 +121,15 @@ sections:
         statusCheck: true
         statusCheckUrl: >-
           http://mahdy.th80:7005/api/docker-kafka-server/topic?search=&show=HIDE_INTERNAL&page=1
-        id: 2_287_kafka
+        id: 2_1742_kafka
+      - title: Wikijs
+        icon: >-
+          https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/wikijs-full-2021-768t-svg-yOi8.png
+        url: http://mahdy.th80:3110/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:3110/
+        id: 3_1742_wikijs
   - name: Remote env
     displayData:
       sortBy: default
@@ -212,6 +227,14 @@ sections:
           https://devicemanagement-orchestrator.dev.protectline.fr/swagger-ui.html
         color: '#5d34e3'
         id: 4_1263_dmorchestrator
+      - title: Site
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://site.dev.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://site.dev.protectline.fr/swagger-ui.html
+        id: 5_1263_site
   - name: Services - dev
     displayData:
       sortBy: default
@@ -234,3 +257,55 @@ sections:
         statusCheck: true
         statusCheckUrl: https://keycloak-21.dev.protectline.fr/
         id: 1_1264_keycloak
+      - title: Consul
+        icon: https://www.svgrepo.com/show/448216/consul.svg
+        url: https://consul.dev.protectline.fr/ui/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://consul.dev.protectline.fr/ui/
+        id: 2_1264_consul
+      - title: Camunda
+        icon: https://docs.camunda.org/manual/7.21/img/orange-C.png
+        url: https://camunda.dev.protectline.fr/camunda/app/cockpit/default/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://camunda.dev.protectline.fr/camunda/app/cockpit/default/
+        id: 3_1264_camunda
+      - title: Thingsboard
+        icon: https://img.thingsboard.io/favicon.png
+        url: https://thingsboard.dev.protectline.fr/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://thingsboard.dev.protectline.fr/
+        id: 4_1264_thingsboard
+      - title: CRM
+        icon: https://cdn-icons-png.flaticon.com/512/5706/5706401.png
+        url: https://crm.dev.protectline.fr/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://crm.dev.protectline.fr/
+        id: 5_1264_crm
+  - name: Swaggers - qa
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Device
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://device.qa.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://device.qa.protectline.fr/swagger-ui.html
+        id: 0_1154_device
+      - title: Install
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://installation.qa.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://installation.qa.protectline.fr/swagger-ui.html
+        id: 1_1154_install
