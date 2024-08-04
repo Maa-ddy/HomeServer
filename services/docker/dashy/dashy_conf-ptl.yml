@@ -90,6 +90,13 @@ sections:
           https://eu-west-3.console.aws.amazon.com/cloudwatch/home?region=eu-west-3#alarmsV2:?~(alarmStateFilter~'ALARM)
         target: newtab
         id: 4_1901_cloudwatchalarms
+      - title: Jira
+        icon: >-
+          https://static-00.iconduck.com/assets.00/jira-icon-512x512-z7na7dot.png
+        url: >-
+          https://protectline.atlassian.net/jira/software/c/projects/SIU/issues/?filter=myopenissues
+        target: newtab
+        id: 5_1901_jira
   - name: Local dev services
     displayData:
       sortBy: default
@@ -285,6 +292,14 @@ sections:
         statusCheck: true
         statusCheckUrl: https://crm.dev.protectline.fr/
         id: 5_1264_crm
+      - title: Kafka
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Apache_kafka-icon.svg/1200px-Apache_kafka-icon.svg.png
+        url: https://kafka-manager.dev.protectline.fr/ui/kafka-teamusage-dev/topic
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://kafka-manager.dev.protectline.fr/ui/kafka-teamusage-dev/topic
+        id: 6_1264_kafka
   - name: Swaggers - qa
     displayData:
       sortBy: default
@@ -309,3 +324,51 @@ sections:
         statusCheck: true
         statusCheckUrl: https://installation.qa.protectline.fr/swagger-ui.html
         id: 1_1154_install
+      - title: Event
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://event.qa.protectline.fr/swagger-ui.html
+        statusCheckUrl: https://event.qa.protectline.fr/swagger-ui.html
+        statusCheck: true
+        id: 2_1154_event
+      - title: Device Mgmt
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://devicemanagement.qa.protectline.fr/swagger-ui.html
+        statusCheck: true
+        statusCheckUrl: https://devicemanagement.qa.protectline.fr/swagger-ui.html
+        id: 3_1154_devicemgmt
+      - title: DM Orchestrator
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: >-
+          https://devicemanagement-orchestrator.qa.protectline.fr/swagger-ui/index.html#/
+        statusCheck: true
+        statusCheckUrl: >-
+          https://devicemanagement-orchestrator.qa.protectline.fr/swagger-ui/index.html#/
+        id: 4_1154_dmorchestrator
+      - title: Site
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://site.qa.protectline.fr/swagger-ui.html#/
+        statusCheck: true
+        statusCheckUrl: https://site.qa.protectline.fr/swagger-ui.html#/
+        id: 5_1154_site
+  - name: Services - prod
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Kafka
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Apache_kafka-icon.svg/1200px-Apache_kafka-icon.svg.png
+        url: >-
+          https://kafka-manager.teamusages.prod.protectline.fr/ui/kafka-teamusage-dev/topic
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: >-
+          https://kafka-manager.teamusages.prod.protectline.fr/ui/kafka-teamusage-dev/topic
+        id: 0_1382_kafka
