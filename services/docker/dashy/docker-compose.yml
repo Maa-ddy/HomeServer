@@ -10,7 +10,7 @@ services:
       - ./icons:/app/public/item-icons
 
     ports:
-      - 3111:80
+      - 3000:80
 
     environment:
       - NODE_ENV=production
@@ -37,7 +37,7 @@ services:
       - ./icons:/app/public/item-icons
 
     ports:
-      - 3112:80
+      - 3001:80
 
     environment:
       - NODE_ENV=production

@@ -1,0 +1,23 @@
+version: '3'
+services:
+  firefox-playground:
+    container_name: firefox-playground
+    image: jlesage/firefox
+    ports:
+      - "5000:5800"
+    volumes:
+      - "/docker/appdata/firefox:/config:rw"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  firefox-ptl:
+    container_name: firefox-ptl
+    image: jlesage/firefox
+    ports:
+      - "5001:5800"
+    volumes:
+      - "/docker/appdata/firefox-ptl:/config:rw"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+
+  
