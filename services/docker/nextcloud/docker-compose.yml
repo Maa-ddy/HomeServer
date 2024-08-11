@@ -3,7 +3,6 @@ version: '2'
 volumes:
   nextcloud:
   db:
-
 services:
   db:
     image: mariadb:10.5
@@ -16,6 +15,9 @@ services:
       - MYSQL_PASSWORD=
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
 
   app:
     image: nextcloud
@@ -26,11 +28,15 @@ services:
       - db
     volumes:
       - /home/mahdy/docker-data/nextcloud:/var/www/html
-        #- /media/mahdy/mahdybackup:/var/www/html/data/Mahdy/files/backup:ro
-      - /media/mahdy/T7:/var/www/html/data/Mahdy/files/T7
+        #- /media/mahdy:/var/www/html/data/Mahdy/files/media
+        #- /media/mahdy/mahdybackup:/var/www/html/data/Mahdy/files/backup
+        #- /media/mahdy/T7:/var/www/html/data/Mahdy/files/T7
         #- /home/mahdy:/var/www/html/data/Mahdy/files/th80-home:ro
     environment:
-      - MYSQL_PASSWORD
+      - MYSQL_PASSWORD=
       - MYSQL_DATABASE=nextcloud
       - MYSQL_USER=nextcloud
       - MYSQL_HOST=db
+      - PUID=1000
+      - PGID=1000
+      - TZ=Europe/Paris
