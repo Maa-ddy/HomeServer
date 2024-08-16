@@ -68,10 +68,10 @@ sections:
         id: 1_1901_twingate
       - title: PTL Dashy
         icon: https://dashy.to/img/dashy.png
-        url: http://mahdy.th80:3112
+        url: http://mahdy.th80:3001
         target: newtab
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:3112
+        statusCheckUrl: http://mahdy.th80:3001
         id: 2_1901_ptldashy
   - name: Multimedia
     displayData:
@@ -83,10 +83,10 @@ sections:
     items:
       - title: Photoprism
         icon: https://dl.photoprism.app/icons/bold.svg
-        url: http://mahdy.th80:2342
+        url: http://mahdy.th80:4200
         target: newtab
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:2342/library/login
+        statusCheckUrl: http://mahdy.th80:4200
         id: 0_1035_photoprism
       - title: Jellyfin
         icon: >-
@@ -99,27 +99,43 @@ sections:
       - title: Nextcloud
         icon: >-
           https://cdn.icon-icons.com/icons2/2699/PNG/512/nextcloud_logo_icon_168948.png
-        url: http://mahdy.th80:8180
+        url: http://mahdy.th80:4000
         target: newtab
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:8180
+        statusCheckUrl: http://mahdy.th80:4000
         id: 2_1035_nextcloud
       - title: Wiki JS
         icon: >-
           https://cf.appdrag.com/dashboard-openvm-clo-b2d42c/uploads/wikijs-full-2021-768t-svg-yOi8.png
-        url: http://mahdy.th80:3110
+        url: http://mahdy.th80:3100
         target: newtab
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:3110
+        statusCheckUrl: http://mahdy.th80:3100
         id: 3_1035_wikijs
-      - title: Resilio Sync
+      - title: Home
         icon: https://avatars.githubusercontent.com/u/12284211?s=280&v=4
-        url: http://mahdy.th80:8100
+        url: http://mahdy.th80:4100
         target: newtab
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:8100
+        statusCheckUrl: http://mahdy.th80:4100
         statusCheckAcceptCodes: '401'
-        id: 4_1035_resiliosync
+        id: 4_1035_home
+      - title: src backup
+        icon: https://avatars.githubusercontent.com/u/12284211?s=280&v=4
+        url: http://mahdy.th80:4101
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:4101
+        statusCheckAcceptCodes: '401'
+        id: 5_1035_srcbackup
+      - title: dest backup
+        icon: https://avatars.githubusercontent.com/u/12284211?s=280&v=4
+        url: http://mahdy.th80:4102
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:4102
+        statusCheckAcceptCodes: '401'
+        id: 6_1035_destbackup
   - name: Dev
     displayData:
       sortBy: default
@@ -162,10 +178,10 @@ sections:
     items:
       - title: Webtop PTL
         icon: https://cdn-icons-png.flaticon.com/512/10321/10321987.png
-        url: http://mahdy.th80:8200/
+        url: http://mahdy.th80:5101
         target: newtab
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:8200/
+        statusCheckUrl: http://mahdy.th80:5101
         id: 0_981_webtopptl
       - title: Code server
         icon: >-
