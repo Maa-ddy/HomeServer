@@ -244,7 +244,7 @@ sections:
         id: 5_1263_site
   - name: Services - dev
     displayData:
-      sortBy: default
+      sortBy: most-used
       rows: 1
       cols: 1
       collapsed: false
@@ -372,3 +372,34 @@ sections:
         statusCheckUrl: >-
           https://kafka-manager.teamusages.prod.protectline.fr/ui/kafka-teamusage-dev/topic
         id: 0_1382_kafka
+      - title: Thingsboard
+        icon: https://img.thingsboard.io/favicon.png
+        url: https://thingsboard.teamusages.prod.protectline.fr
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://thingsboard.teamusages.prod.protectline.fr
+        id: 1_1382_thingsboard
+  - name: Swaggers - prod
+    displayData:
+      sortBy: default
+      rows: 1
+      cols: 1
+      collapsed: false
+      hideForGuests: false
+    items:
+      - title: Device
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://device.teamusages.prod.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://device.teamusages.prod.protectline.fr/swagger-ui.html
+        id: 0_1381_device
+      - title: Thingsboard
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://thingsboard.teamusages.prod.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://thingsboard.teamusages.prod.protectline.fr/swagger-ui.html
+        id: 1_1381_thingsboard
