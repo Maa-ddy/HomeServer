@@ -69,7 +69,7 @@ sections:
       - title: PTL Dashy
         icon: https://dashy.to/img/dashy.png
         url: http://mahdy.th80:3001
-        target: newtab
+        target: sametab
         statusCheck: true
         statusCheckUrl: http://mahdy.th80:3001
         id: 2_1901_ptldashy
@@ -196,16 +196,24 @@ sections:
         id: 1_981_codeserver
       - title: Firefox PTL
         icon: firefox_ptl.png
-        url: http://mahdy.th80:5801
+        url: http://mahdy.th80:5001
         target: newtab
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:5801
+        statusCheckUrl: http://mahdy.th80:5001
         id: 2_981_firefoxptl
       - title: Firefox playground
         icon: >-
-          https://static-00.iconduck.com/assets.00/firefox-icon-1981x2048-4izjijq3.png
-        url: http://mahdy.th80:5800
+          https://upload.wikimedia.org/wikipedia/commons/1/16/Firefox_logo%2C_2017.png
+        url: http://mahdy.th80:5000
         target: newtab
         statusCheck: true
-        statusCheckUrl: http://mahdy.th80:5800
+        statusCheckUrl: http://mahdy.th80:5000
         id: 3_981_firefoxplayground
+      - title: Firefox Expensya
+        icon: >-
+          https://upload.wikimedia.org/wikipedia/commons/1/16/Firefox_logo%2C_2017.png
+        url: http://mahdy.th80:5002
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: http://mahdy.th80:5002
+        id: 4_981_firefoxexpensya
