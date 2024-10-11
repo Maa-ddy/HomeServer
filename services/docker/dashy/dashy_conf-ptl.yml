@@ -242,6 +242,22 @@ sections:
         statusCheck: true
         statusCheckUrl: https://site.dev.protectline.fr/swagger-ui.html
         id: 5_1263_site
+      - title: Thingsboard
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://thingsboard.dev.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://thingsboard.dev.protectline.fr/swagger-ui.html
+        id: 6_1263_thingsboard
+      - title: Notifications
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://notifications.dev.protectline.fr/swagger-ui.html#/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://notifications.dev.protectline.fr/swagger-ui.html#/
+        id: 7_1263_notifications
   - name: Services - dev
     displayData:
       sortBy: most-used
@@ -354,6 +370,22 @@ sections:
         statusCheck: true
         statusCheckUrl: https://site.qa.protectline.fr/swagger-ui.html#/
         id: 5_1154_site
+      - title: Thingsboard
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://thingsboard.qa.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://thingsboard.qa.protectline.fr/swagger-ui.html
+        id: 6_1154_thingsboard
+      - title: Notifications
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://notifications.qa.protectline.fr/swagger-ui.html#/
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://notifications.qa.protectline.fr/swagger-ui.html#/
+        id: 7_1154_notifications
   - name: Services - prod
     displayData:
       sortBy: default
@@ -379,6 +411,20 @@ sections:
         statusCheck: true
         statusCheckUrl: https://thingsboard.teamusages.prod.protectline.fr
         id: 1_1382_thingsboard
+      - title: CRM
+        icon: https://cdn-icons-png.flaticon.com/512/5706/5706401.png
+        url: https://crm.teamoffre.prod.protectline.fr/main/customers/list
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://crm.teamoffre.prod.protectline.fr/main/customers/list
+        id: 2_1382_crm
+      - title: Consul
+        icon: https://www.svgrepo.com/show/448216/consul.svg
+        url: https://consul.zoneoutils.prod.protectline.fr/ui/dc1/services
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://consul.zoneoutils.prod.protectline.fr/ui/dc1/services
+        id: 3_1382_consul
   - name: Swaggers - prod
     displayData:
       sortBy: default
@@ -403,3 +449,11 @@ sections:
         statusCheck: true
         statusCheckUrl: https://thingsboard.teamusages.prod.protectline.fr/swagger-ui.html
         id: 1_1381_thingsboard
+      - title: Notifications
+        icon: >-
+          https://static-00.iconduck.com/assets.00/swagger-icon-512x512-halz44im.png
+        url: https://notifications.teamusages.prod.protectline.fr/swagger-ui.html
+        target: newtab
+        statusCheck: true
+        statusCheckUrl: https://notifications.teamusages.prod.protectline.fr/swagger-ui.html
+        id: 2_1381_notifications
